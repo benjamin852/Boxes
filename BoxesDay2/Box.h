@@ -10,4 +10,12 @@
 
 @interface Box : NSObject
 
+@property (nonatomic) float height;
+@property (nonatomic) float width;
+@property (nonatomic) float length;
+
+- (instancetype) initWithHeight: (float) height width: (float) width length: (float) length;
+- (float) volumeCalculation;
+- (float) fitsInBox:(Box*)secondBox;
+
 @end
